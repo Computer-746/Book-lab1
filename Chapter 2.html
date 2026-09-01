@@ -1,10 +1,238 @@
 <html>
-    <head> </head>
+<head><a href="Table of Content .html">Back To Table of Contents</a></head>
+<hr>
+<hr>
+<body>
+    <h1>Chapter 2: Number System</h1>
+<hr>
+    <h2>Introduction to Number Systems</h2>
 
-    <body> 
-     <h1><a href="Table of Content .html">  Back To Table of Contents</a></h1>   
-     <hr>
-     <hr>
-     <h1>Chapter 2</h1>
-    </body>
+    <p>
+        A number system is a systematic way of representing numbers. In computing,
+        different number systems are used for various purposes, from internal processing
+        to data representation.
+    </p>
+
+    <p>
+        The value of a digit in a positional number system depends on the digit itself,
+        its position within the number, and the base (or radix) of the number system.
+    </p>
+
+    <p>The main positional number systems are:</p>
+
+    <pre>
+1. Decimal Number System (Base-10)
+
+   - Uses 10 unique digits (0–9).
+   - Each position represents a power of 10.
+   - This is the number system used in daily life.
+
+
+2. Binary Number System (Base-2)
+
+   - Uses only two digits: 0 and 1.
+   - Each position represents a power of 2.
+   - It is the foundation of all digital computers.
+
+
+3. Octal Number System (Base-8)
+
+   - Uses eight digits (0–7).
+   - Each position represents a power of 8.
+   - Three binary digits can be represented by one octal digit.
+
+
+4. Hexadecimal Number System (Base-16)
+
+   - Uses digits 0–9 and letters A–F.
+   - A = 10, B = 11, C = 12,
+     D = 13, E = 14, F = 15.
+   - Each position represents a power of 16.
+   - Four binary digits can be represented by one hexadecimal digit.
+    </pre>
+
+    <p>
+        The base or radix of a number system indicates the total number of unique
+        digits or symbols used in that system.
+    </p>
+
+    <h2>Number System Conversions</h2>
+
+    <p>
+        Converting numbers between different bases is an important skill in computer science.
+    </p>
+
+    <h2>1. Decimal to Binary, Octal, and Hexadecimal Conversion</h2>
+
+    <p>
+        To convert a decimal number to another base, use the division-remainder method.
+    </p>
+
+    <pre>
+Steps:
+1. Divide the decimal number by the target base.
+2. Write down the remainder.
+3. Repeat until the quotient becomes zero.
+4. Read the remainders from bottom to top.
+    </pre>
+
+    <h2>2. Binary, Octal, and Hexadecimal to Decimal Conversion</h2>
+
+    <p>
+        Multiply each digit by its positional weight and add the results together.
+    </p>
+
+    <pre>
+Formula:
+
+Digit × (Base)^Position
+
+Positions are counted from right to left,
+starting from zero.
+    </pre>
+
+    <h2>3. Binary to Octal and Hexadecimal Conversion</h2>
+
+    <pre>
+Binary to Octal:
+- Group binary digits into sets of three.
+- Add leading zeros if necessary.
+- Convert each group into one octal digit.
+
+Binary to Hexadecimal:
+- Group binary digits into sets of four.
+- Add leading zeros if necessary.
+- Convert each group into one hexadecimal digit.
+    </pre>
+
+    <h2>Introduction to Boolean Values, Truth Table, Boolean Expression, and Boolean Function</h2>
+
+    <h2>Boolean Algebra</h2>
+
+    <p>
+        Boolean Algebra, introduced by George Boole, is a branch of algebra where
+        variables have only two possible values: True (1) and False (0). It forms
+        the foundation of digital electronic circuits.
+    </p>
+
+    <h2>Boolean Values</h2>
+
+    <pre>
+True  = 1
+False = 0
+
+These represent the ON and OFF states
+of electronic switches.
+    </pre>
+
+    <h2>Truth Table</h2>
+
+    <p>
+        A truth table lists every possible combination of input values and the
+        corresponding output for a logical operation or expression.
+    </p>
+
+    <h2>Boolean Expression</h2>
+
+    <p>
+        A Boolean expression combines Boolean variables, logical operators
+        (AND, OR, NOT), and parentheses to produce a logical result.
+    </p>
+
+    <pre>
+Example:
+A + B'
+    </pre>
+
+    <h2>Boolean Function</h2>
+
+    <p>
+        A Boolean function produces a binary output (0 or 1) based on binary inputs.
+        It defines how the output of a logic circuit depends on its inputs.
+    </p>
+
+    <h2>Logic Gates</h2>
+
+    <p>
+        Logic gates are the basic building blocks of digital systems. They perform
+        logical operations on one or more binary inputs and produce a binary output.
+    </p>
+
+    <h2>1. AND Gate</h2>
+
+    <pre>
+Output:
+1 only when all inputs are 1.
+
+Boolean Expression:
+A · B
+    </pre>
+
+    <h2>2. OR Gate</h2>
+
+    <pre>
+Output:
+1 if at least one input is 1.
+
+Boolean Expression:
+A + B
+    </pre>
+
+    <h2>3. NOT Gate (Inverter)</h2>
+
+    <pre>
+Output:
+Reverses the input.
+
+1 becomes 0
+0 becomes 1
+
+Boolean Expression:
+A'
+    </pre>
+
+    <h2>4. NAND Gate</h2>
+
+    <pre>
+Output:
+0 only when all inputs are 1.
+
+It is the opposite of the AND gate.
+    </pre>
+
+    <h2>5. NOR Gate</h2>
+
+    <pre>
+Output:
+1 only when all inputs are 0.
+
+It is the opposite of the OR gate.
+    </pre>
+
+    <h2>6. XOR Gate (Exclusive-OR)</h2>
+
+    <pre>
+Output:
+1 when the two inputs are different.
+
+Example:
+0 XOR 1 = 1
+1 XOR 0 = 1
+1 XOR 1 = 0
+    </pre>
+
+    <h2>7. XNOR Gate (Exclusive-NOR)</h2>
+
+    <pre>
+Output:
+1 when the two inputs are the same.
+
+Example:
+0 XNOR 0 = 1
+1 XNOR 1 = 1
+1 XNOR 0 = 0
+    </pre>
+
+</body>
+
 </html>
